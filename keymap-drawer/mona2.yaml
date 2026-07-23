@@ -235,7 +235,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
-  - '&mkp MB3'
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -307,6 +307,6 @@ combos:
 - p: [0, 1]
   k: TAB
 - p: [0, 10]
-  k: {t: LANG ZENKAKUHANKAKU, h: default}
+  k: {t: Alt+`, h: default}
 - p: [9, 20]
   k: {t: BACKSPACE, h: default}

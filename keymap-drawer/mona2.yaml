@@ -44,7 +44,7 @@ layers:
   - ENTER
   - DELETE
   '1':
-  - ''
+  - {t: ESC, s: '`'}
   - ''
   - UP ARROW
   - ''

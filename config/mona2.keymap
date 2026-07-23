@@ -35,7 +35,7 @@
         };
 
         layer0_zen_han {
-            bindings = <&lt 0 LANG_ZENKAKUHANKAKU>;
+            bindings = <&lt 0 LA(GRAVE)>;
             key-positions = <0 10>;
         };
 
@@ -141,10 +141,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                                &trans
+&trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans  &trans
+&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &trans  &mkp MB1  &mkp MB2  &none   &trans
+&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

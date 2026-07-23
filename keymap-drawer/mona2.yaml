@@ -16,24 +16,24 @@ layers:
   - D
   - F
   - G
-  - F13
+  - {t: ':', h: /}
   - H
   - J
   - K
   - L
-  - ;
+  - {t: '-', h: Sft+-}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
   - B
   - ''
-  - F15
+  - {t: F7, h: F10}
   - N
   - M
-  - ','
-  - .
-  - /
+  - {t: ',', h: (}
+  - {t: ., h: )}
+  - {t: '!', h: '?'}
   - LCTRL
   - LEFT WIN
   - LEFT ALT
@@ -42,7 +42,7 @@ layers:
   - {t: '&to_layer_0 LANG2', h: '3'}
   - {t: '&to_layer_0 LANG1', h: '3'}
   - {t: SPACE, h: '1'}
-  - LEFT ALT
+  - DELETE
   '1':
   - '1'
   - '2'

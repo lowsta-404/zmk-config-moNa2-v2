@@ -308,3 +308,5 @@ combos:
   k: TAB
 - p: [0, 10]
   k: {t: LANG ZENKAKUHANKAKU, h: default}
+- p: [9, 20]
+  k: {t: BACKSPACE, h: default}

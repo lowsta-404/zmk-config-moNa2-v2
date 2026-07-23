@@ -333,6 +333,12 @@ path.combo {
 <a href="#default">
 <text x="28" y="67" class="combo hold layer-activator">default</text>
 </a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="686" y="43" width="28" height="26" class="combo"/>
+<text x="700" y="56" class="combo tap"><tspan style="font-size: 78%">BACKSPACE</tspan></text>
+<a href="#default">
+<text x="700" y="67" class="combo hold layer-activator">default</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 280)" class="layer-1">
@@ -531,6 +537,12 @@ path.combo {
 <a href="#default">
 <text x="28" y="67" class="combo hold layer-activator">default</text>
 </a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="686" y="43" width="28" height="26" class="combo"/>
+<text x="700" y="56" class="combo tap"><tspan style="font-size: 78%">BACKSPACE</tspan></text>
+<a href="#default">
+<text x="700" y="67" class="combo hold layer-activator">default</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 560)" class="layer-2">
@@ -728,6 +740,12 @@ path.combo {
 </text>
 <a href="#default">
 <text x="28" y="67" class="combo hold layer-activator">default</text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="686" y="43" width="28" height="26" class="combo"/>
+<text x="700" y="56" class="combo tap"><tspan style="font-size: 78%">BACKSPACE</tspan></text>
+<a href="#default">
+<text x="700" y="67" class="combo hold layer-activator">default</text>
 </a></g>
 </g>
 </g>
@@ -949,6 +967,12 @@ path.combo {
 <a href="#default">
 <text x="28" y="67" class="combo hold layer-activator">default</text>
 </a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="686" y="43" width="28" height="26" class="combo"/>
+<text x="700" y="56" class="combo tap"><tspan style="font-size: 78%">BACKSPACE</tspan></text>
+<a href="#default">
+<text x="700" y="67" class="combo hold layer-activator">default</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1120)" class="layer-4">
@@ -1152,6 +1176,12 @@ path.combo {
 </text>
 <a href="#default">
 <text x="28" y="67" class="combo hold layer-activator">default</text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="686" y="43" width="28" height="26" class="combo"/>
+<text x="700" y="56" class="combo tap"><tspan style="font-size: 78%">BACKSPACE</tspan></text>
+<a href="#default">
+<text x="700" y="67" class="combo hold layer-activator">default</text>
 </a></g>
 </g>
 </g>
@@ -1358,6 +1388,12 @@ path.combo {
 <a href="#default">
 <text x="28" y="67" class="combo hold layer-activator">default</text>
 </a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="686" y="43" width="28" height="26" class="combo"/>
+<text x="700" y="56" class="combo tap"><tspan style="font-size: 78%">BACKSPACE</tspan></text>
+<a href="#default">
+<text x="700" y="67" class="combo hold layer-activator">default</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1680)" class="layer-6">
@@ -1550,6 +1586,12 @@ path.combo {
 </text>
 <a href="#default">
 <text x="28" y="67" class="combo hold layer-activator">default</text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="686" y="43" width="28" height="26" class="combo"/>
+<text x="700" y="56" class="combo tap"><tspan style="font-size: 78%">BACKSPACE</tspan></text>
+<a href="#default">
+<text x="700" y="67" class="combo hold layer-activator">default</text>
 </a></g>
 </g>
 </g>

@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: mona2}
 layers:
   default:
-  - Q
+  - {t: Q, type: held}
   - W
   - E
   - R
@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, type: held}
   - S
   - D
   - F
@@ -304,5 +304,7 @@ layers:
 combos:
 - p: [39, 38]
   k: {t: ESC, h: '4'}
-- p: [11, 12]
+- p: [0, 1]
   k: TAB
+- p: [0, 10]
+  k: {t: LANG ZENKAKUHANKAKU, h: default}

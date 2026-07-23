@@ -38,13 +38,54 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - BACKSPACE
-  - {t: ENTER, h: '2'}
+  - {t: ENTER, h: '1'}
   - {t: '&to_layer_0 LANG2', h: '3'}
   - SPACE
   - ENTER
   - DELETE
-  '1': ['', '', UP ARROW, '', '', '', '7', '8', '9', +, '', LEFT ARROW, DOWN, RIGHT, '', '', ., '4', '5', '6', '-', '', '', '', '', '', '', '=', '0', '1', '2', '3',
-    '*', '', '', '', '', '', '', '', '', /]
+  '1':
+  - ''
+  - ''
+  - UP ARROW
+  - ''
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - ''
+  - LEFT ARROW
+  - DOWN
+  - RIGHT
+  - ''
+  - ''
+  - .
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '='
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - /
   '2':
   - '!'
   - '@'
@@ -83,7 +124,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

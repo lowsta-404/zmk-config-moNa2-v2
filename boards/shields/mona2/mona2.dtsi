@@ -85,16 +85,25 @@
                 ;
     };
 
-    //right hand trackball
-    trackball_central_listener: trackball_central_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        input-processors = 
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;         //Y軸反転
-            //<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
-            //<&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
-            //<&zip_temp_layer 5 500>;                            //オートマウスレイヤーの選択
+    / {
+    // オートマウスレイヤー用（タイピング直後は発動しないようにする）
+    zip_temp_layer_custom: zip_temp_layer_custom {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <500>;    //直近500ms以内にキー入力があれば発動しない
     };
+};
+
+//right hand trackball
+trackball_central_listener: trackball_central_listener {
+    compatible = "zmk,input-listener";
+    status = "disabled";
+    input-processors =
+        <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,          //Y軸反転
+        //<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,         //X軸とY軸の入れ替え
+        //<&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,        //X軸反転
+        <&zip_temp_layer_custom 5 5000>;                       //オートマウスレイヤーの選択
+};
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";

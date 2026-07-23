@@ -16,12 +16,12 @@ layers:
   - D
   - F
   - G
-  - {t: ':', h: /}
+  - {t: ':', h: Sft+/}
   - H
   - J
   - K
   - L
-  - {t: '-', h: Sft+-}
+  - {t: _, h: Sft+-}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C

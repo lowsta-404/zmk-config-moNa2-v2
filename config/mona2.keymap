@@ -38,6 +38,11 @@
             bindings = <&lt 0 LANG_ZENKAKUHANKAKU>;
             key-positions = <0 10>;
         };
+
+        layer0_backspace {
+            bindings = <&lt 0 BACKSPACE>;
+            key-positions = <9 20>;
+        };
     };
 
     macros {

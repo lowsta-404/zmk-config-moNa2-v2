@@ -31,7 +31,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <0 1>;
+        };
+
+        layer0_zen_han {
+            bindings = <&lt 0 LANG_ZENKAKUHANKAKU>;
+            key-positions = <0 10>;
         };
     };
 

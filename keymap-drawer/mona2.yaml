@@ -27,7 +27,7 @@ layers:
   - C
   - V
   - B
-  - BT NXT
+  - {t: ▽, type: trans}
   - {t: F7, h: F10}
   - N
   - M

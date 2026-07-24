@@ -89,7 +89,7 @@
     zip_temp_layer_custom: zip_temp_layer_custom {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
-        require-prior-idle-ms = <500>;    //直近500ms以内にキー入力があれば発動しない
+        require-prior-idle-ms = <1000>;    //直近500ms以内にキー入力があれば発動しない
     };
 
     //right hand trackball

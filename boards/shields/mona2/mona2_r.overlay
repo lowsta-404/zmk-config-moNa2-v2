@@ -1,12 +1,9 @@
 #include "mona2.dtsi"
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-
-
 &default_transform {
     col-offset = <6>;
 };
-
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
@@ -16,8 +13,6 @@
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
 };
-
-
 &pinctrl {
     spi0_default: spi0_default {    //通常時(SPI通信中)のピン構成
         group1 {
@@ -26,7 +21,6 @@
                 <NRF_PSEL(SPIM_MISO, 0, 4)>;
         };
     };
-
     spi0_sleep: spi0_sleep {    //スリープ時のピン構成(省電力)
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
@@ -36,8 +30,6 @@
         };
     };
 };
-
-
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim"; //マイコンがnRFシリーズ
@@ -45,14 +37,13 @@
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;  //P0.09を指定(CS)
-
     trackball_central: trackball_central@0 {
         status = "okay";
         compatible = "pixart,pmw3610";  //トラボセンサ用のドライバとバインド
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //P0.02を指定(MOTION)
-        cpi = <300>;
+        cpi = <350>;
         //swap-xy;
         invert-x; //COROPIT版ではコメントアウトを外す
         invert-y; //COROPIT版ではコメントアウトを外す
@@ -61,12 +52,10 @@
         y-input-code = <INPUT_REL_Y>;
     };
 };
-
 // Overrides for the input listener node
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
-
     scroller {
         layers = <6>;
         input-processors = 
@@ -74,7 +63,21 @@
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
-            <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
+            <&zip_scroll_scaler 1 8>;                           //スクロール速度（前回の1/5から1/8に減速。数値はお好みで調整してください）
     };
+};
 
+// オートマウスレイヤーの除外キー設定
+// MOUSEレイヤーで実際に機能を割り当てているキーだけ除外し、
+// それ以外のキーを押した瞬間にAMLが即解除されるようにする
+&zip_temp_layer_custom {
+    excluded-positions = 
+        6    // LA(RIGHT)
+        7    // LA(PLUS)
+        17   // MB1（左クリック）
+        18   // mo 6（SCROLLレイヤーへの切り替え）
+        19   // MB2（右クリック）
+        29   // LA(LEFT_ARROW)
+        30   // LA(MINUS)
+    >;
 };

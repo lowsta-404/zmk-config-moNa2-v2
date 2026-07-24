@@ -108,10 +108,10 @@
 
         layer_2 {
             bindings = <
-&trans       &trans    &kp INT_YEN  &trans  &trans                    &trans  &trans  &trans             &trans            &kp PERCENT
-&kp AT_SIGN  &kp HASH  &kp DOLLAR   &trans  &trans            &trans  &trans  &trans  &trans             &trans            &trans
-&trans       &trans    &trans       &trans  &trans  &trans    &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans
-&trans       &trans    &trans       &trans  &trans  &trans    &trans  &trans                                               &trans
+&trans            &trans    &kp INT_YEN  &trans  &trans                    &trans  &trans  &trans       &trans  &kp PERCENT
+&kp LS(NUMBER_2)  &kp HASH  &kp DOLLAR   &trans  &trans            &trans  &trans  &trans  &trans       &trans  &trans
+&trans            &trans    &trans       &trans  &trans  &trans    &trans  &trans  &trans  &kp AT_SIGN  &trans  &trans
+&trans            &trans    &trans       &trans  &trans  &trans    &trans  &trans                               &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -141,10 +141,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &kp LA(RIGHT)       &kp LA(KP_PLUS)   &trans    &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1            &mo 6             &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(KP_MINUS)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &kp LA(RIGHT)       &kp LA(LS(EQUAL))  &trans    &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1            &mo 6              &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(KP_MINUS)   &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

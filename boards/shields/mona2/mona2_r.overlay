@@ -71,7 +71,7 @@
 // MOUSEレイヤーで実際に機能を割り当てているキーだけ除外し、
 // それ以外のキーを押した瞬間にAMLが即解除されるようにする
 &zip_temp_layer_custom {
-    excluded-positions = 
+    excluded-positions = <
         6    // LA(RIGHT)
         7    // LA(PLUS)
         17   // MB1（左クリック）
@@ -79,4 +79,5 @@
         19   // MB2（右クリック）
         29   // LA(LEFT_ARROW)
         30   // LA(MINUS)
+    >;
 };

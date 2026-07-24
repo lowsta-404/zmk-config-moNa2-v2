@@ -86,10 +86,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R          &kp T                                                          &kp Y      &kp U  &kp I                   &kp O                    &kp P
-&kp A             &kp S         &kp D         &kp F          &kp G                                  &mt SLASH SINGLE_QUOTE  &kp H      &kp J  &kp K                   &kp L                    &mt LS(INTERNATIONAL_1) MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V          &kp B        &bt BT_NXT                &mt F10 F7              &kp N      &kp M  &mt LS(NUMBER_9) COMMA  &mt LS(NUMBER_0) PERIOD  &mt QUESTION EXCLAMATION
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &lt 1 ENTER  &lt_to_layer_0 3 LANG2    &kp SPACE               &kp ENTER                                                          &kp DELETE
+&kp Q             &kp W         &kp E         &kp R    &kp T                                                          &kp Y      &kp U  &kp I                   &kp O                    &kp P
+&kp A             &kp S         &kp D         &kp F    &kp G                                  &mt SLASH SINGLE_QUOTE  &kp H      &kp J  &kp K                   &kp L                    &mt LS(INTERNATIONAL_1) MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V    &kp B        &bt BT_NXT                &mt F10 F7              &kp N      &kp M  &mt LS(NUMBER_9) COMMA  &mt LS(NUMBER_0) PERIOD  &mt QUESTION EXCLAMATION
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 A  &lt 1 ENTER  &lt_to_layer_0 3 LANG2    &kp SPACE               &kp ENTER                                                          &kp DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -130,10 +130,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans            &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                                  &bt BT_CLR_ALL
+&kp LS(N9)  &kp LS(NUMBER_9)  &kp LS(LANGUAGE_9)  &kp LS(KP_NUMBER_9)  &kp LS(INTERNATIONAL_9)                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans      &trans            &trans              &trans               &trans                             &trans       &trans        &trans        &trans        &trans        &trans
+&trans      &trans            &trans              &trans               &trans                   &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans      &trans            &trans              &trans               &trans                   &trans    &trans       &trans                                                  &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&scroll_up_down>;

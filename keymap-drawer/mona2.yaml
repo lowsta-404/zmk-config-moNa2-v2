@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: mona2}
 layers:
   default:
-  - {t: Z, type: held}
+  - {t: Q, type: held}
   - W
   - E
   - R

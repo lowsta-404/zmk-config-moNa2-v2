@@ -97,10 +97,10 @@
 
         layer_1 {
             bindings = <
-&none         &none           &kp UP_ARROW  &none      &none                      &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-&bt BT_SEL 0  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &none           &none      &kp PERIOD    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&bt BT_SEL 1  &none           &none         &none      &none  &none    &kp EQUAL  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK
-&bt BT_SEL 2  &none           &none         &none      &none  &none    &none      &none                                                   &kp SLASH
+&trans        &trans          &kp UP_ARROW  &trans     &trans                       &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+&bt BT_SEL 0  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans            &trans     &kp PERIOD    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&bt BT_SEL 1  &trans          &trans        &trans     &trans  &trans    &kp EQUAL  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK
+&bt BT_SEL 2  &trans          &trans        &trans     &trans  &trans    &trans     &trans                                                  &kp SLASH
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -141,10 +141,10 @@
 
         MOUSE {
             bindings = <
-&none  &none  &none  &none  &none                  &none  &kp LA(RIGHT)       &kp LA(PLUS)   &none     &none
-&none  &none  &none  &none  &none           &none  &none  &mkp MB1            &mo 6          &mkp MB2  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &kp LA(LEFT_ARROW)  &kp LA(MINUS)  &none     &none
-&none  &none  &none  &none  &none  &none    &none  &none                                               &none
+&trans  &trans  &trans  &trans  &trans                    &trans  &kp LA(RIGHT)       &kp LA(PLUS)   &trans    &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1            &mo 6          &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(MINUS)  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                               &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

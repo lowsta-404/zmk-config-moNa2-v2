@@ -86,10 +86,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R    &kp T                                                          &kp Y      &kp U  &kp I                   &kp O                    &kp P
-&kp A             &kp S         &kp D         &kp F    &kp G                                  &mt SLASH SINGLE_QUOTE  &kp H      &kp J  &kp K                   &kp L                    &mt LS(INTERNATIONAL_1) MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V    &kp B        &bt BT_NXT                &mt F10 F7              &kp N      &kp M  &mt LS(NUMBER_8) COMMA  &mt LS(NUMBER_9) PERIOD  &mt QUESTION EXCLAMATION
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 A  &lt 1 ENTER  &lt_to_layer_0 3 LANG2    &kp SPACE               &kp ENTER                                                          &kp DELETE
+&kp Q             &kp W         &kp E         &kp R  &kp T                                        &kp Y      &kp U  &kp I                   &kp O                    &kp P
+&kp A             &kp S         &kp D         &kp F  &kp G                &mt SLASH SINGLE_QUOTE  &kp H      &kp J  &kp K                   &kp L                    &mt LS(INTERNATIONAL_1) MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B  &bt BT_NXT    &mt F10 F7              &kp N      &kp M  &mt LS(NUMBER_8) COMMA  &mt LS(NUMBER_9) PERIOD  &mt QUESTION EXCLAMATION
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mo 2  &mo 1  &kp ENTER     &kp SPACE               &kp ENTER                                                          &kp DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -108,10 +108,10 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS  &kp UNDERSCORE
-&kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &mkp MB3   &mkp MB1       &mkp MB2      &kp EQUAL  &kp PLUS
-&kp F1           &kp F2       &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &kp F6     &kp F7         &kp F8        &kp F9     &kp F10
-&trans           &trans       &trans             &trans      &trans       &trans     &trans   &trans                                             &trans
+&trans       &trans    &kp INT_YEN  &trans  &trans                    &trans  &trans  &trans             &trans            &kp PERCENT
+&kp AT_SIGN  &kp HASH  &kp DOLLAR   &trans  &trans            &trans  &trans  &trans  &trans             &trans            &trans
+&trans       &trans    &trans       &trans  &trans  &trans    &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans
+&trans       &trans    &trans       &trans  &trans  &trans    &trans  &trans                                               &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -141,10 +141,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &kp LA(RIGHT)       &kp LA(PLUS)   &trans    &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1            &mo 6          &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(MINUS)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                               &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &kp LA(RIGHT)       &kp LA(KP_PLUS)   &trans    &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1            &mo 6             &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(KP_MINUS)  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

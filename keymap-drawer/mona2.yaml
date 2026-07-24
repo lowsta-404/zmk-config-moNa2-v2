@@ -31,8 +31,8 @@ layers:
   - {t: F7, h: F10}
   - N
   - M
-  - {t: ',', h: (}
-  - {t: ., h: )}
+  - {t: ',', h: Sft+9}
+  - {t: ., h: Sft+0}
   - {t: '!', h: '?'}
   - LCTRL
   - LEFT WIN

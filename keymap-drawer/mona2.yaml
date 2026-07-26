@@ -310,3 +310,7 @@ combos:
   k: {t: Alt+`, h: default}
 - p: [9, 20]
   k: {t: BACKSPACE, h: default}
+- p: [2, 3]
+  k: '&login'
+- p: [3, 4]
+  k: '&USB'

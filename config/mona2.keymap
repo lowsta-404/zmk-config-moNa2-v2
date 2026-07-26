@@ -52,6 +52,20 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        login: login {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(K) &kp A &kp K &kp I &kp Y &kp A &kp Y &kp O>;
+            label = "LOGIN";
+        };
+
+        USB: USB {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp R &kp D &kp C &kp MINUS &kp W &kp N2 &kp N5 &kp N0 &kp N3>;
+            label = "USB";
+        };
     };
 
     behaviors {

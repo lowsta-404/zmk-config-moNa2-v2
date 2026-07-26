@@ -53,6 +53,11 @@
             bindings = <&USB>;
             key-positions = <3 4>;
         };
+
+        number {
+            bindings = <&tog 1>;
+            key-positions = <39 40>;
+        };
     };
 
     macros {

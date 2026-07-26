@@ -314,3 +314,5 @@ combos:
   k: '&login'
 - p: [3, 4]
   k: '&USB'
+- p: [39, 40]
+  k: {t: '1', h: toggle}

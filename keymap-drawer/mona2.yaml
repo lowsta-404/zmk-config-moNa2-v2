@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: mona2}
 layers:
   default:
-  - {t: Q, type: held}
+  - Q
   - W
   - E
   - R
@@ -10,8 +10,8 @@ layers:
   - U
   - I
   - O
-  - P
-  - {t: A, type: held}
+  - {t: P, type: held}
+  - A
   - S
   - D
   - F
@@ -21,7 +21,7 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: Sft+INTERNATIONAL 1}
+  - {t: '-', h: Sft+INTERNATIONAL 1, type: held}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -306,8 +306,6 @@ combos:
   k: {t: ESC, h: '4'}
 - p: [0, 1]
   k: TAB
-- p: [0, 10]
-  k: {t: Alt+`, h: default}
 - p: [9, 20]
   k: {t: BACKSPACE, h: default}
 - p: [2, 3]

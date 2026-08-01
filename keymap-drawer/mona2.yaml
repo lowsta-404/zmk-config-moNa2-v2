@@ -22,39 +22,39 @@ layers:
   - K
   - L
   - {t: '-', h: Sft+INTERNATIONAL 1, type: held}
-  - {t: Z, h: LEFT SHIFT}
+  - Z
   - X
   - C
   - V
   - B
-  - {t: ▽, type: trans}
+  - {t: LALT, h: '`'}
   - {t: F7, h: F10}
   - N
   - M
   - {t: ',', h: Sft+8}
   - {t: ., h: Sft+9}
-  - {t: '!', h: '?'}
+  - {t: Sft+1, h: /}
   - LCTRL
-  - LEFT WIN
-  - LEFT ALT
+  - LSHIFT
+  - LEFT GUI
   - '2'
   - '1'
-  - ENTER
+  - BACKSPACE
   - SPACE
   - ENTER
-  - DELETE
+  - {t: DEL, h: ESCAPE}
   '1':
-  - {t: ▽, type: trans}
+  - TAB
   - {t: ▽, type: trans}
   - UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+INTERNATIONAL 1
   - '7'
   - '8'
   - '9'
-  - +
-  - {t: ▽, type: trans}
+  - Sft+;
+  - {t: BT, h: '0'}
   - LEFT ARROW
   - DOWN
   - RIGHT
@@ -65,19 +65,19 @@ layers:
   - '5'
   - '6'
   - '-'
+  - {t: BT, h: '1'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '='
+  - ENTER
+  - Sft+-
   - '0'
   - '1'
   - '2'
   - '3'
-  - '*'
-  - {t: ▽, type: trans}
+  - Sft+'
+  - {t: BT, h: '2'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -96,10 +96,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '%'
-  - '@'
-  - '#'
-  - $
+  - Sft+5
+  - '['
+  - Sft+3
+  - Sft+4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -117,7 +117,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '"'
+  - Sft+2
   - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -223,7 +223,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Alt+RIGHT
-  - Alt++
+  - Ctl+Sft+;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -246,7 +246,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Alt+LEFT ARROW
-  - Alt+_
+  - Ctl+-
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

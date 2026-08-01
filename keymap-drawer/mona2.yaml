@@ -33,7 +33,7 @@ layers:
   - M
   - {t: ',', h: Sft+8}
   - {t: ., h: Sft+9}
-  - {t: Sft+1, h: /}
+  - {t: Sft+1, h: Sft+/}
   - LCTRL
   - LSHIFT
   - LEFT GUI

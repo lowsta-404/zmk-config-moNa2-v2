@@ -34,11 +34,6 @@
             key-positions = <0 1>;
         };
 
-        layer0_zen_han {
-            bindings = <&lt 0 LA(GRAVE)>;
-            key-positions = <0 10>;
-        };
-
         layer0_backspace {
             bindings = <&lt 0 BACKSPACE>;
             key-positions = <9 20>;

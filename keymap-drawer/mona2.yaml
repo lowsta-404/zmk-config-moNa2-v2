@@ -10,7 +10,7 @@ layers:
   - U
   - I
   - O
-  - {t: P, type: held}
+  - P
   - A
   - S
   - D
@@ -21,7 +21,7 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: Sft+INTERNATIONAL 1, type: held}
+  - {t: '-', h: Sft+INTERNATIONAL 1}
   - Z
   - X
   - C
@@ -39,10 +39,10 @@ layers:
   - LEFT GUI
   - '2'
   - '1'
-  - BACKSPACE
-  - SPACE
+  - {t: BACKSPACE, type: held}
+  - {t: SPACE, type: held}
   - ENTER
-  - {t: DEL, h: ESCAPE}
+  - {t: DEL, h: RSHIFT}
   '1':
   - TAB
   - {t: ▽, type: trans}
@@ -211,8 +211,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
   '5':
@@ -303,14 +303,10 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [39, 38]
-  k: {t: ESC, h: '4'}
+  k: {t: ESC, h: default}
 - p: [0, 1]
   k: TAB
 - p: [9, 20]
   k: {t: BACKSPACE, h: default}
-- p: [2, 3]
-  k: '&login'
-- p: [3, 4]
-  k: '&USB'
 - p: [39, 40]
   k: {t: '1', h: toggle}
